@@ -1,0 +1,11 @@
+.disabled-row {
+    background-color: lightgray;
+    pointer-events: none;
+    cursor: 'not-allowed';
+}
+.ant-table-selection{
+    display: none;
+}
+.ant-modal-close-x{
+    display: none;
+}

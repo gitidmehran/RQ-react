@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: react
+  name: react
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: react
+    spec:
+      imagePullSecrets:
+        - name: registry-secret
+      containers:
+      - image: 105635814729.dkr.ecr.us-east-1.amazonaws.com/rq-react-test-hz:BUILD_NUMBER
+        name: react-frontend
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        resources: {}

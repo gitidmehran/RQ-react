@@ -1,0 +1,12 @@
+.disabled-row {
+    background-color: lightgray;
+    pointer-events: none;
+    cursor: 'not-allowed';
+}
+.ant-table-selection{
+    display: none;
+}
+.urduclass{
+    text-align: right;
+    justify-content:start;
+}
